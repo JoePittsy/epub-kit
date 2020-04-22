@@ -1,0 +1,22 @@
+{
+  "name": "epub-info-reader",
+  "version": "1.0.1",
+  "description": "Read the metadata from an ePub file",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "epub",
+    "book",
+    "reader",
+    "metadata",
+    "ebook"
+  ],
+  "author": "Joe Pitts",
+  "license": "ISC",
+  "dependencies": {
+    "node-stream-zip": "^1.9.1",
+    "xml2json": "^0.12.0"
+  }
+}
