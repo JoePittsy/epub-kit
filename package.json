@@ -4,7 +4,7 @@
   "description": "Read the metadata from an ePub file",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node ./test/test.js"
   },
   "keywords": [
     "epub",
@@ -16,6 +16,9 @@
   "author": "Joe Pitts",
   "license": "ISC",
   "dependencies": {
+    "chai": "^4.2.0",
+    "image-to-base64": "^2.0.1",
+    "mocha": "^7.1.1",
     "node-stream-zip": "^1.9.1",
     "xml2json": "^0.12.0"
   }
