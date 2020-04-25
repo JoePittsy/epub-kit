@@ -6,10 +6,9 @@ describe("parseEpub", () => {
     it("Get's the books title", () => {
       reader.parseEpub("test/test.epub", (err, data) => {
         if (err) {
-          done(err);
+          throw new Error(err);
         }
         expect(data.title).to.equal("The title");
-        done();
       });
     });
   });
@@ -18,10 +17,9 @@ describe("parseEpub", () => {
     it("Get's the books author", () => {
       reader.parseEpub("test/test.epub", (err, data) => {
         if (err) {
-          done(err);
+          throw new Error(err);
         }
         expect(data.creator).to.equal("The author");
-        done();
       });
     });
   });
@@ -30,10 +28,9 @@ describe("parseEpub", () => {
     it("Get's the books publisher", () => {
       reader.parseEpub("test/test.epub", (err, data) => {
         if (err) {
-          done(err);
+          throw new Error(err);
         }
         expect(data.publisher).to.equal("The publisher");
-        done();
       });
     });
   });
@@ -42,10 +39,9 @@ describe("parseEpub", () => {
     it("Get's the books date", () => {
       reader.parseEpub("test/test.epub", (err, data) => {
         if (err) {
-          done(err);
+          throw new Error(err);
         }
         expect(data.date).to.equal(undefined);
-        done();
       });
     });
   });
@@ -53,10 +49,9 @@ describe("parseEpub", () => {
     it("Get's the books id", () => {
       reader.parseEpub("test/test.epub", (err, data) => {
         if (err) {
-          done(err);
+          throw new Error(err);
         }
-        expect(data.ID["$t"]).to.equal(0 - 4813 - 7307 - 1);
-        done();
+        expect(data.ID["$t"]).to.equal("0-4813-7307-1");
       });
     });
   });
@@ -64,10 +59,9 @@ describe("parseEpub", () => {
     it("Get's the books language", () => {
       reader.parseEpub("test/test.epub", (err, data) => {
         if (err) {
-          done(err);
+          throw new Error(err);
         }
         expect(data.language).to.equal("en");
-        done();
       });
     });
   });
@@ -75,10 +69,9 @@ describe("parseEpub", () => {
     it("Get's the books copyright", () => {
       reader.parseEpub("test/test.epub", (err, data) => {
         if (err) {
-          done(err);
+          throw new Error(err);
         }
         expect(data.copyright).to.equal("© copyright notice");
-        done();
       });
     });
   });
@@ -86,10 +79,9 @@ describe("parseEpub", () => {
     it("Get's the books cover path", () => {
       reader.parseEpub("test/test.epub", (err, data) => {
         if (err) {
-          done(err);
+          throw new Error(err);
         }
         expect(data.coverPath).to.equal("Images/cover.jpg");
-        done();
       });
     });
   });
@@ -99,10 +91,9 @@ describe("getCover", () => {
     it("Get's the books cover file type (jpg, png, etc)", () => {
       reader.getCover("test/test.epub", (err, data) => {
         if (err) {
-          done(err);
+          throw new Error(err);
         }
         expect(data[0]).to.equal("jpg");
-        done();
       });
     });
   });
@@ -110,10 +101,11 @@ describe("getCover", () => {
     it("Get's the books cover as a base64 string", () => {
       reader.getCover("test/test.epub", (err, data) => {
         if (err) {
-          done(err);
+          throw new Error(err);
         }
-        expect(data[1]).to.equal("/9j/4AAQSkZJRgABAQEBLAEsAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wgARCAABAAEDAREAAhEBAxEB/8QAFAABAAAAAAAAAAAAAAAAAAAAB//EABUBAQEAAAAAAAAAAAAAAAAAAAYI/9oADAMBAAIQAxAAAAE5C1T/AP/EABQQAQAAAAAAAAAAAAAAAAAAAAD/2gAIAQEAAQUCf//EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAIAQMBAT8Bf//EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAIAQIBAT8Bf//EABQQAQAAAAAAAAAAAAAAAAAAAAD/2gAIAQEABj8Cf//EABQQAQAAAAAAAAAAAAAAAAAAAAD/2gAIAQEAAT8hf//aAAwDAQACAAMAAAAQ/wD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oACAEDAQE/EH//xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oACAECAQE/EH//xAAUEAEAAAAAAAAAAAAAAAAAAAAA/9oACAEBAAE/EH//2Q==");
-        done();
+        expect(data[1]).to.equal(
+          "/9j/4AAQSkZJRgABAQEBLAEsAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wgARCAABAAEDAREAAhEBAxEB/8QAFAABAAAAAAAAAAAAAAAAAAAAB//EABUBAQEAAAAAAAAAAAAAAAAAAAYI/9oADAMBAAIQAxAAAAE5C1T/AP/EABQQAQAAAAAAAAAAAAAAAAAAAAD/2gAIAQEAAQUCf//EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAIAQMBAT8Bf//EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAIAQIBAT8Bf//EABQQAQAAAAAAAAAAAAAAAAAAAAD/2gAIAQEABj8Cf//EABQQAQAAAAAAAAAAAAAAAAAAAAD/2gAIAQEAAT8hf//aAAwDAQACAAMAAAAQ/wD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oACAEDAQE/EH//xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oACAECAQE/EH//xAAUEAEAAAAAAAAAAAAAAAAAAAAA/9oACAEBAAE/EH//2Q=="
+        );
       });
     });
   });

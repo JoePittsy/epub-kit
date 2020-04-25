@@ -4,7 +4,7 @@
   "description": "Read the metadata from an ePub file",
   "main": "index.js",
   "scripts": {
-    "test": "node ./test/test.js"
+    "test": "npx mocha --reporter spec test/test.js"
   },
   "keywords": [
     "epub",
@@ -15,11 +15,12 @@
   ],
   "author": "Joe Pitts",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
     "chai": "^4.2.0",
-    "image-to-base64": "^2.0.1",
-    "mocha": "^7.1.1",
-    "node-stream-zip": "^1.9.1",
-    "xml2json": "^0.12.0"
+    "mocha": "^7.1.1"
+  },
+  "dependencies": {
+    "fast-xml-parser": "^3.16.0",
+    "node-stream-zip": "^1.9.1"
   }
 }

@@ -1,4 +1,4 @@
-let parser = require("xml2json");
+let parser = require('fast-xml-parser');
 let StreamZip = require("node-stream-zip");
 
 /**
@@ -14,7 +14,7 @@ let StreamZip = require("node-stream-zip");
  * @param {string} path - Path to the epub 
  * @param {parseEpubCallback} callback - Callback with (err, data)
  */
-function parseEpub(path, callback) {
+async function parseEpub(path, callback){
   let zip = new StreamZip({
     file: path,
     storeEntries: true,
@@ -30,7 +30,7 @@ function parseEpub(path, callback) {
       }
     }
     let xml = zip.entryDataSync(target).toString("utf8");
-    let json = JSON.parse(parser.toJson(xml));
+    let json = parser.parse(xml);
     let meta = json.package.metadata;
     let manifest = json.package.manifest;
     let cover = null;
