@@ -1,4 +1,4 @@
-let parser = require('fast-xml-parser');
+let parser = require("fast-xml-parser");
 let StreamZip = require("node-stream-zip");
 
 /**
@@ -11,15 +11,18 @@ let StreamZip = require("node-stream-zip");
 
 /**
  * Returns the ePubs meta data as an object
- * @param {string} path - Path to the epub 
+ * @param {string} path - Path to the epub
  * @param {parseEpubCallback} callback - Callback with (err, data)
  */
-async function parseEpub(path, callback){
+async function parseEpub(path, callback) {
   let zip = new StreamZip({
     file: path,
     storeEntries: true,
   });
-  zip.on("error", err => {callback(err); return;} );
+  zip.on("error", (err) => {
+    callback(err);
+    return;
+  });
   zip.on("ready", () => {
     let target;
 
@@ -30,14 +33,13 @@ async function parseEpub(path, callback){
       }
     }
     let xml = zip.entryDataSync(target).toString("utf8");
-    let json = parser.parse(xml);
+    let json = parser.parse(xml, { ignoreAttributes: false, attributeNamePrefix : "",});
     let meta = json.package.metadata;
     let manifest = json.package.manifest;
     let cover = null;
     // Reverse for as the cover is usualy at the bottom
     for (let index = manifest.item.length - 1; index > 0; index--) {
       const element = manifest.item[index];
-      // console.log(element.id);
       if (element.id === "cover-image") {
         cover = element.href;
         break;
@@ -101,21 +103,21 @@ async function parseEpub(path, callback){
     }
     try {
       let opf_loc = target.substring(0, target.lastIndexOf("/"));
-      if(cover != null){
-        if(opf_loc != ""){
-          data.coverPath = `${target.substring(0, target.lastIndexOf("/"))}/${cover}`;
-        }
-        else{
+      if (cover != null) {
+        if (opf_loc != "") {
+          data.coverPath = `${target.substring(
+            0,
+            target.lastIndexOf("/")
+          )}/${cover}`;
+        } else {
           data.coverPath = cover;
         }
-      }
-      else{
+      } else {
         data.coverPath = null;
       }
-      
     } catch (e) {
       data.coverPath = null;
-      console.log(e)
+      console.log(e);
     }
 
     callback(null, data);
@@ -132,30 +134,40 @@ async function parseEpub(path, callback){
 
 /**
  * Returns the cover in base64 and its filetype
- * @param {string} path 
- * @param {getCoverCallback} callback 
+ * @param {string} path
+ * @param {getCoverCallback} callback
  */
-function getCover(path, callback){
+function getCover(path, callback) {
   parseEpub(path, (err, book) => {
-    if (err) { callback(err); return; }
-    if (book.coverPath == null){callback("No cover image"); return;}
+    if (err) {
+      callback(err);
+      return;
+    }
+    if (book.coverPath == null) {
+      callback("No cover image");
+      return;
+    }
 
     let zip = new StreamZip({
       file: path,
       storeEntries: true,
     });
 
-    zip.on("error", err => {callback(err); return;} );
-
-    zip.on("ready", () => { 
-      let data = zip.entryDataSync(book.coverPath);
-      zip.close();
-      let dataType = book.coverPath.substring(book.coverPath.lastIndexOf(".")+1);
-      let base = data.toString('base64')
-      callback(null, [dataType, base]);
+    zip.on("error", (err) => {
+      callback(err);
       return;
     });
 
-  })
+    zip.on("ready", () => {
+      let data = zip.entryDataSync(book.coverPath);
+      zip.close();
+      let dataType = book.coverPath.substring(
+        book.coverPath.lastIndexOf(".") + 1
+      );
+      let base = data.toString("base64");
+      callback(null, [dataType, base]);
+      return;
+    });
+  });
 }
 module.exports = { parseEpub, getCover };
