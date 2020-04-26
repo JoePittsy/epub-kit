@@ -48,13 +48,22 @@ async function parseEpub(path, callback) {
     let cover_target = "";
     if (cover === null) {
       //using old spec
-      for (let index = 0; index < meta.meta.length; index++) {
-        const element = meta.meta[index];
-        if (element.name === "cover") {
-          cover_target = element.content;
-          break;
+      if (meta.meta.length === undefined){ // Only one item in meta
+        // console.log(meta.meta.name)
+        if (meta.meta.name === "cover") {
+          cover_target = meta.meta.content;
+        }
+      } 
+      else{
+        for (let index = 0; index < meta.meta.length; index++) {
+          const element = meta.meta[index];
+          if (element.name === "cover") {
+            cover_target = element.content;
+            break;
+          }
         }
       }
+
       for (let index = manifest.item.length - 1; index > 0; index--) {
         const element = manifest.item[index];
         // console.log(element.id);
@@ -64,6 +73,10 @@ async function parseEpub(path, callback) {
         }
       }
     }
+    if (cover === null){ // Still no cover lets try once mpre
+
+    }
+
     zip.close();
     let data = new Object();
     try {
