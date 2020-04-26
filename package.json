@@ -1,6 +1,6 @@
 {
   "name": "epub-info-reader",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Read the metadata from an ePub file",
   "main": "index.js",
   "scripts": {
