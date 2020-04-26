@@ -49,7 +49,6 @@ async function parseEpub(path, callback) {
     if (cover === null) {
       //using old spec
       if (meta.meta.length === undefined){ // Only one item in meta
-        // console.log(meta.meta.name)
         if (meta.meta.name === "cover") {
           cover_target = meta.meta.content;
         }
@@ -57,6 +56,7 @@ async function parseEpub(path, callback) {
       else{
         for (let index = 0; index < meta.meta.length; index++) {
           const element = meta.meta[index];
+
           if (element.name === "cover") {
             cover_target = element.content;
             break;
@@ -64,9 +64,8 @@ async function parseEpub(path, callback) {
         }
       }
 
-      for (let index = manifest.item.length - 1; index > 0; index--) {
+      for (let index = manifest.item.length - 1; index >= 0; index--) {
         const element = manifest.item[index];
-        // console.log(element.id);
         if (element.id === cover_target) {
           cover = element.href;
           break;
