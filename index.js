@@ -1,4 +1,3 @@
-const parser = require("fast-xml-parser");
 const StreamZip = require("node-stream-zip");
 const xmldoc = require('xmldoc');
 const pathLib = require('path');
