@@ -1,5 +1,16 @@
-let parser = require("fast-xml-parser");
-let StreamZip = require("node-stream-zip");
+const parser = require("fast-xml-parser");
+const StreamZip = require("node-stream-zip");
+const xmldoc = require('xmldoc');
+const pathLib = require('path');
+
+function getValue(name, data) {
+  try {
+    return data.childNamed(name).val;
+  } catch (e) {
+    return undefined;
+  }
+}
+
 
 /**
  * Callback for parseEpubs.
@@ -19,10 +30,14 @@ async function parseEpub(path, callback) {
     file: path,
     storeEntries: true,
   });
+
   zip.on("error", (err) => {
-    callback(err);
-    return;
+    if (callback) {
+      callback(err);
+      return;
+    }
   });
+
   zip.on("ready", () => {
     let target;
 
@@ -32,154 +47,59 @@ async function parseEpub(path, callback) {
         break;
       }
     }
+
     let xml = zip.entryDataSync(target).toString("utf8");
-    let json = parser.parse(xml, { ignoreAttributes: false, attributeNamePrefix : "",});
-    let meta = json.package.metadata;
-    let manifest = json.package.manifest;
-    let cover = null;
-    // Reverse for as the cover is usualy at the bottom
-    for (let index = manifest.item.length - 1; index > 0; index--) {
-      const element = manifest.item[index];
-      if (element.id === "cover-image") {
-        cover = element.href;
-        break;
+    let document = new xmldoc.XmlDocument(xml);
+
+
+    let metadata = document.childNamed("metadata");
+
+
+    let book = {
+      title: getValue("dc:title", metadata),
+      creator: getValue("dc:creator", metadata),
+      language: getValue("dc:language", metadata),
+      contributor: getValue("dc:contributor", metadata),
+      coverage: getValue("dc:coverage", metadata),
+      date: getValue("dc:date", metadata),
+      description: getValue("dc:description", metadata),
+      format: getValue("dc:format", metadata),
+      publisher: getValue("dc:publisher", metadata),
+      relation: getValue("dc:relation", metadata),
+      rights: getValue("dc:rights", metadata),
+      source: getValue("dc:source", metadata),
+      subject: getValue("dc:subject", metadata),
+      type: getValue("dc:type", metadata),
+      cover: undefined,
+      cover_filetype: undefined
+    }
+
+    let cover_path;
+
+    try {
+      cover_path = pathLib.join(pathLib.dirname(target), document.childNamed("manifest").childWithAttribute("id", "cover-image").attr.href);
+      book.cover_filetype = document.childNamed("manifest").childWithAttribute("id", "cover-image").attr["media-type"];
+    } catch (e) {
+      try {
+        let cover_target = metadata.childWithAttribute("name", "cover").attr.content;
+        cover_path = pathLib.join(pathLib.dirname(target), document.childNamed("manifest").childWithAttribute("id", cover_target).attr.href);
+        book.cover_filetype = document.childNamed("manifest").childWithAttribute("id", cover_target).attr["media-type"];
+      } catch (e) {
+        if (callback) { callback(e); return; }
       }
     }
-    let cover_target = "";
-    if (cover === null) {
-      //using old spec
-      if (meta.meta.length === undefined){ // Only one item in meta
-        if (meta.meta.name === "cover") {
-          cover_target = meta.meta.content;
-        }
-      } 
-      else{
-        for (let index = 0; index < meta.meta.length; index++) {
-          const element = meta.meta[index];
-
-          if (element.name === "cover") {
-            cover_target = element.content;
-            break;
-          }
-        }
-      }
-
-      for (let index = manifest.item.length - 1; index >= 0; index--) {
-        const element = manifest.item[index];
-        if (element.id === cover_target) {
-          cover = element.href;
-          break;
-        }
-      }
-    }
-    if (cover === null){ // Still no cover lets try once mpre
-
-    }
-
-    zip.close();
-    let data = new Object();
-    try {
-      data.title = meta["dc:title"];
-    } catch (e) {
-      data.title = null;
-    }
-    try {
-      data.creator = meta["dc:creator"];
-    } catch (e) {
-      data.creator = null;
-    }
-    try {
-      data.publisher = meta["dc:publisher"];
-    } catch (e) {
-      data.publisher = null;
-    }
-    try {
-      data.date = meta["dc:date"];
-    } catch (e) {
-      data.date = null;
-    }
-    try {
-      data.ID = meta["dc:identifier"];
-    } catch (e) {
-      data.ID = null;
-    }
-    try {
-      data.language = meta["dc:language"];
-    } catch (e) {
-      data.language = null;
-    }
-    try {
-      data.copyright = meta["dc:rights"];
-    } catch (e) {
-      data.copyright = null;
-    }
-    try {
-      let opf_loc = target.substring(0, target.lastIndexOf("/"));
-      if (cover != null) {
-        if (opf_loc != "") {
-          data.coverPath = `${target.substring(
-            0,
-            target.lastIndexOf("/")
-          )}/${cover}`;
-        } else {
-          data.coverPath = cover;
-        }
-      } else {
-        data.coverPath = null;
-      }
-    } catch (e) {
-      data.coverPath = null;
-      console.log(e);
-    }
-
-    callback(null, data);
-  });
-}
-
-/**
- * Callback for getCover.
- *
- * @callback getCoverCallback
- * @param {Object} err - The error if the code fails
- * @param {Object[string, base64]} data - The file type of the image and the image as a base64 string
- */
-
-/**
- * Returns the cover in base64 and its filetype
- * @param {string} path
- * @param {getCoverCallback} callback
- */
-function getCover(path, callback) {
-  parseEpub(path, (err, book) => {
-    if (err) {
-      callback(err);
-      return;
-    }
-    if (book.coverPath == null) {
-      callback("No cover image");
-      return;
-    }
-
-    let zip = new StreamZip({
-      file: path,
-      storeEntries: true,
-    });
-
-    zip.on("error", (err) => {
-      callback(err);
-      return;
-    });
-
-    zip.on("ready", () => {
-      let data = zip.entryDataSync(book.coverPath);
+    if (cover_path) {
+      let data = zip.entryDataSync(cover_path);
       zip.close();
-      let dataType = book.coverPath.substring(
-        book.coverPath.lastIndexOf(".") + 1
-      );
-      let base = data.toString("base64");
-      callback(null, [dataType, base]);
-      return;
-    });
+      book.cover = data.toString("base64");
+    }else{
+      zip.close();
+    }
+
+    callback(null, book);
+
   });
 }
-module.exports = { parseEpub, getCover };
+
+module.exports = { parseEpub };
+
