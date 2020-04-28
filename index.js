@@ -53,9 +53,9 @@ async function parseEpub(path, callback) {
 
     let metadata = document.childNamed("metadata");
 
-
     let book = {
       title: getValue("dc:title", metadata),
+      identifier: getValue("dc:identifier", metadata),
       creator: getValue("dc:creator", metadata),
       language: getValue("dc:language", metadata),
       contributor: getValue("dc:contributor", metadata),
@@ -91,7 +91,7 @@ async function parseEpub(path, callback) {
       let data = zip.entryDataSync(cover_path);
       zip.close();
       book.cover = data.toString("base64");
-    }else{
+    } else {
       zip.close();
     }
 
@@ -102,3 +102,4 @@ async function parseEpub(path, callback) {
 
 module.exports = { parseEpub };
 
+parseEpub("/mnt/Files/Joe/Documents/Library/EXPANSE/Nemesis Games - James S. A. Corey.epub")
