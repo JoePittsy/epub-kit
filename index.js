@@ -101,5 +101,3 @@ async function parseEpub(path, callback) {
 }
 
 module.exports = { parseEpub };
-
-parseEpub("/mnt/Files/Joe/Documents/Library/EXPANSE/Nemesis Games - James S. A. Corey.epub")

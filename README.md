@@ -1,10 +1,4 @@
-### ePub Info Reader
+### ePub tools
 
-ePub info reader is a simple callback driven module for reading the meta data of epubs.
+A suite of tools for working with epubs.
 
-`
-let reader = require(epub-info-reader);
-reader.parseEpub(path, (data) =>{
-    console.log(data);
-})
-`
