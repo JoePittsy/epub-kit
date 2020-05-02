@@ -44,8 +44,5 @@ Where data is an object with the following fields.
 | source       |string or undefined |A related resource from which the described resource is derived.|
 | subject       |string or undefined |Adventure stories       |
 | type       |string or undefined |Text |
-| cover       |base 64 string or undefined |ZXhhbXBsZSBib29rIGNvdmVyIHBob3RvIA== |
-| cover_filetype       |base 64 string or undefined |image/jpeg |
-
 
 
