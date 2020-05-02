@@ -12,10 +12,16 @@ Or, to install globally:
 
 ## Usage
 ```javascript
-const reader = require("epub-kit");
-reader.parseEpub("myBook.epub", (err, data) => {
-// Work with the data here.
+const Book = require("epub-kit");
+let myEpub = new Book("/path/to/my/book.epub");
+myEpub.read()
+.then(data => {
+    // work with data
 });
+
+let info = myEpub.getData(["author", "title"]);
+console.log(info) -> {"author": "Andy Weir", "title": "The Martian"}
+
 ```
 Where data is an object with the following fields.
 
