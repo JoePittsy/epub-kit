@@ -9,7 +9,8 @@
   "scripts": {
     "build": "rimraf ./build && tsc",
     "start": "npm run build && node build/index.js",
-    "docs": "rimraf ./docs && jsdoc src/book.ts -c jsdoc.json"
+    "docs": "rimraf ./docs && jsdoc src/book.ts -c jsdoc.json",
+    "test": "ts-mocha tests/*.test.ts"
   },
   "keywords": [
     "epub",
@@ -26,10 +27,16 @@
     "xmldoc": "^1.1.2"
   },
   "devDependencies": {
+    "@types/chai": "^4.2.11",
+    "@types/mocha": "^7.0.2",
     "@types/node": "^13.13.4",
     "better-docs": "^2.0.0",
+    "chai": "^4.2.0",
     "jsdoc": "^3.6.4",
+    "mocha": "^7.1.2",
     "rimraf": "^3.0.2",
+    "ts-mocha": "^7.0.0",
+    "ts-node": "^8.10.1",
     "typescript": "^3.8.3"
   }
 }

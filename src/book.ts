@@ -2,6 +2,8 @@ import StreamZip from "node-stream-zip";
 import xmldoc, { XmlDocument, XmlNode, XmlElement } from 'xmldoc';
 import pathLib from 'path';
 
+type Metadata = { [key: string]: string | undefined; }
+
 /** Class representing a book. */
 class Book {
     private title: string | undefined;
@@ -52,7 +54,7 @@ class Book {
      * Read the books metadata and returns a metadata object
      * @returns {Promise<Metadata>} Promise object represents the metadata of the book
      */
-    async read(): Promise<{ [key: string]: string | undefined; }> {
+    async read(): Promise<Metadata> {
         let getValue = (name: string, data: XmlElement): string | undefined => {
             let object = data.childNamed(name);
             if (object) { return object.val }
@@ -67,12 +69,14 @@ class Book {
                 storeEntries: true,
             });
             zip.on("ready", resolve);
+            zip.on("error", reject);
         });
 
         await zipPromise
             .then(() => {
                 let opfObject = Object.values(zip.entries()).filter((x: any) => { return pathLib.extname(x.name) === ".opf" })[0];
                 let document = new xmldoc.XmlDocument(zip.entryDataSync(opfObject.name).toString("utf-8"));
+                zip.close();
                 this.metadata = document.childNamed("metadata");
                 this.manifest = document.childNamed("manifest");
 
@@ -103,8 +107,8 @@ class Book {
      * @param {string[]} filter An array of strings to filter the output to. Valid strings are title, identifier, creator, language, contributor, coverage, date, description, format, publisher, relation, rights, source, subject and type
      * @returns {Metadata} Metadata either filtered or full.
      */
-    getData(filter?: String[]): { [key: string]: string | undefined; } {
-        let allData: { [key: string]: string | undefined; } = {
+    getData(filter?: String[]): Metadata {
+        let allData: Metadata = {
             "title": this.title,
             "identifier": this.identifier,
             "creator": this.creator,
