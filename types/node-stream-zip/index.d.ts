@@ -52,5 +52,5 @@ declare module 'node-stream-zip' {
         extract(entry: string, outPath: string, callback: (err?: any) => void): void
         close(callback?: (err?: any) => void): void
     }
-    export = StreamZip;
+    export = StreamZip
 }
