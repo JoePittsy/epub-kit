@@ -1,0 +1,781 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?><ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1">
+  <head>
+    <meta content="c98702cc-1def-4789-9366-18d8bdf83710" name="dtb:uid"/>
+    <meta content="1" name="dtb:depth"/>
+    <meta content="0" name="dtb:totalPageCount"/>
+    <meta content="0" name="dtb:maxPageNumber"/>
+  </head>
+  <docTitle>
+    <text>Foundation's Fear</text>
+  </docTitle>
+  <navMap>
+    <navPoint id="navpoint-1" playOrder="1">
+      <navLabel>
+        <text xmlns="http://www.daisy.org/z3986/2005/ncx/">Cover</text>
+      </navLabel>
+      <content src="Text/FoundationsFear_cov.html"/>
+    </navPoint>
+    <navPoint id="navpoint-2" playOrder="2">
+      <navLabel>
+        <text xmlns="http://www.daisy.org/z3986/2005/ncx/">Contents</text>
+      </navLabel>
+      <content src="Text/FoundationsFear_con.html"/>
+    </navPoint>
+    <navPoint id="navpoint-3" playOrder="3">
+      <navLabel>
+        <text xmlns="http://www.daisy.org/z3986/2005/ncx/">R. Daneel Olivaw did not look like Eto Demerzel. That…</text>
+      </navLabel>
+      <content src="Text/FoundationsFear_ren_1.html"/>
+    </navPoint>
+    <navPoint id="navpoint-4" playOrder="4">
+      <navLabel>
+        <text xmlns="http://www.daisy.org/z3986/2005/ncx/">Part 1: Mathist Minister</text>
+      </navLabel>
+      <content src="Text/FoundationsFear_p_1.html"/>
+      <navPoint id="navpoint-5" playOrder="5">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">1 He had made enough enemies to acquire a nickname, Hari…</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_1_ch_1.html"/>
+      </navPoint>
+      <navPoint id="navpoint-6" playOrder="6">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">2 Walking through the Imperial Gardens, Hari wished Dors was with…</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_1_ch_2.html"/>
+      </navPoint>
+      <navPoint id="navpoint-7" playOrder="7">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">3 He woke with ideas buzzing in his head.</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_1_ch_3.html"/>
+      </navPoint>
+      <navPoint id="navpoint-8" playOrder="8">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">4 “We should leave soon,” Hari said, scribbling on his notepad.</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_1_ch_4.html"/>
+      </navPoint>
+      <navPoint id="navpoint-9" playOrder="9">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">5 He had another stim to calm himself. Somehow he was…</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_1_ch_5.html"/>
+      </navPoint>
+      <navPoint id="navpoint-10" playOrder="10">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">6 “Parties are supposed to cheer people up,” Yugo said, sliding…</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_1_ch_6.html"/>
+      </navPoint>
+      <navPoint id="navpoint-11" playOrder="11">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">7 The next day he got an education in the realities…</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_1_ch_7.html"/>
+      </navPoint>
+      <navPoint id="navpoint-12" playOrder="12">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">8 The woman from the Ministry of Interlocking Cultures looked down…</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_1_ch_8.html"/>
+      </navPoint>
+      <navPoint id="navpoint-13" playOrder="13">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">9 “The trip, it’ll be worth it just to get out…</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_1_ch_9.html"/>
+      </navPoint>
+      <navPoint id="navpoint-14" playOrder="14">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">10 Hari batted away all suggestions that they discontinue their journey.</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_1_ch_10.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navpoint-15" playOrder="15">
+      <navLabel>
+        <text xmlns="http://www.daisy.org/z3986/2005/ncx/">Part 2: The Rose Meets the Scalpel</text>
+      </navLabel>
+      <content src="Text/FoundationsFear_p_2.html"/>
+      <navPoint id="navpoint-16" playOrder="16">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">1 Joan of Arc wakened inside an amber dream. Cool breezes…</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_2_ch_1.html"/>
+      </navPoint>
+      <navPoint id="navpoint-17" playOrder="17">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">2 Marq Hofti strode swiftly toward his Waldon Shaft office, his…</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_2_ch_2.html"/>
+      </navPoint>
+      <navPoint id="navpoint-18" playOrder="18">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">3 “What’s going on here?” Voltaire rose, hands on hips—chair…</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_2_ch_3.html"/>
+      </navPoint>
+      <navPoint id="navpoint-19" playOrder="19">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">4 She tried to ignore the sorceress called Sybyl, who claimed…</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_2_ch_4.html"/>
+      </navPoint>
+      <navPoint id="navpoint-20" playOrder="20">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">5 When Marq strode into Splashes &amp; Sniffs to meet his buddy…</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_2_ch_5.html"/>
+      </navPoint>
+      <navPoint id="navpoint-21" playOrder="21">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">6 Voltaire loomed—brows furrowed, scowling, hands on skinny hips. He…</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_2_ch_6.html"/>
+      </navPoint>
+      <navPoint id="navpoint-22" playOrder="22">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">7 Hari Seldon stared at the images and data-rivers. “Voltaire suffered…</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_2_ch_7.html"/>
+      </navPoint>
+      <navPoint id="navpoint-23" playOrder="23">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">8 “I have no desire to see the skinny gentleman in…</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_2_ch_8.html"/>
+      </navPoint>
+      <navPoint id="navpoint-24" playOrder="24">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">9 “It’s about time,” Voltaire scolded Madame la Scientiste. She hung…</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_2_ch_9.html"/>
+      </navPoint>
+      <navPoint id="navpoint-25" playOrder="25">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">10 The icon flashing on Marq’s board stopped just as he…</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_2_ch_10.html"/>
+      </navPoint>
+      <navPoint id="navpoint-26" playOrder="26">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">11 “Your orders,” said Garçon 213-ADM with a flourish.</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_2_ch_11.html"/>
+      </navPoint>
+      <navPoint id="navpoint-27" playOrder="27">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">12 Marq puffed the packet into his nose and waited for…</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_2_ch_12.html"/>
+      </navPoint>
+      <navPoint id="navpoint-28" playOrder="28">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">13 “Now pay attention,” Voltaire said when the scientist at last…</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_2_ch_13.html"/>
+      </navPoint>
+      <navPoint id="navpoint-29" playOrder="29">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">14 Sybyl waited nervously for her turn on the agenda of…</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_2_ch_14.html"/>
+      </navPoint>
+      <navPoint id="navpoint-30" playOrder="30">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">15 Unresponsive to the presence of Madame la Sorcière the Maid</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_2_ch_15.html"/>
+      </navPoint>
+      <navPoint id="navpoint-31" playOrder="31">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">16 Voltaire cackled with satisfaction. The café appeared, popping into luminous…</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_2_ch_16.html"/>
+      </navPoint>
+      <navPoint id="navpoint-32" playOrder="32">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">17 Marq tuned Nim in on the interoffice screen. “Did it!</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_2_ch_17.html"/>
+      </navPoint>
+      <navPoint id="navpoint-33" playOrder="33">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">18 Sybyl sat anxiously beside Monsieur Boker in the Great Coliseum.</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_2_ch_18.html"/>
+      </navPoint>
+      <navPoint id="navpoint-34" playOrder="34">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">19 Voltaire loved audiences. And he had never appeared before one…</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_2_ch_19.html"/>
+      </navPoint>
+      <navPoint id="navpoint-35" playOrder="35">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">20 Far below in the rowdy crowd, Nim turned to Marq.</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_2_ch_20.html"/>
+      </navPoint>
+      <navPoint id="navpoint-36" playOrder="36">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">21 “I cheated?” Marq shouted to Sybyl. The coliseum crowd seethed.</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_2_ch_21.html"/>
+      </navPoint>
+      <navPoint id="navpoint-37" playOrder="37">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">22 “They’re…making love!” Marq exclaimed in the stands.</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_2_ch_22.html"/>
+      </navPoint>
+      <navPoint id="navpoint-38" playOrder="38">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">23 Sybyl gazed at Marq, her breath coming in quick little…</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_2_ch_23.html"/>
+      </navPoint>
+      <navPoint id="navpoint-39" playOrder="39">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">24 The president of Artifice Associates waved his hand as he…</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_2_ch_24.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navpoint-40" playOrder="40">
+      <navLabel>
+        <text xmlns="http://www.daisy.org/z3986/2005/ncx/">R. Daneel Olivaw allowed his face to express squint-eyed concern.</text>
+      </navLabel>
+      <content src="Text/FoundationsFear_ren_2.html"/>
+    </navPoint>
+    <navPoint id="navpoint-41" playOrder="41">
+      <navLabel>
+        <text xmlns="http://www.daisy.org/z3986/2005/ncx/">Part 3: Body Politics</text>
+      </navLabel>
+      <content src="Text/FoundationsFear_p_3.html"/>
+      <navPoint id="navpoint-42" playOrder="42">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">1 Hari Seldon’s desksec chimed and announced, “Margetta Moonrose desires a…</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_3_ch_1.html"/>
+      </navPoint>
+      <navPoint id="navpoint-43" playOrder="43">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">2 Not quite time for the Specials to arrive, Hari thought.</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_3_ch_2.html"/>
+      </navPoint>
+      <navPoint id="navpoint-44" playOrder="44">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">3 He entered their apartment and went straight to the kitchen.</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_3_ch_3.html"/>
+      </navPoint>
+      <navPoint id="navpoint-45" playOrder="45">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">4 He savored his work all the more, since he had…</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_3_ch_4.html"/>
+      </navPoint>
+      <navPoint id="navpoint-46" playOrder="46">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">5 He did not want to go to the Grand Imperial…</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_3_ch_5.html"/>
+      </navPoint>
+      <navPoint id="navpoint-47" playOrder="47">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">6 The Academic Potentate led him out with ritual words to…</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_3_ch_6.html"/>
+      </navPoint>
+      <navPoint id="navpoint-48" playOrder="48">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">7 Hari’s father had derisively referred to most public affairs as…</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_3_ch_7.html"/>
+      </navPoint>
+      <navPoint id="navpoint-49" playOrder="49">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">8 Yugo was waiting in his office the next morning. Face…</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_3_ch_8.html"/>
+      </navPoint>
+      <navPoint id="navpoint-50" playOrder="50">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">9 It is never easy to deal with criticism, especially when…</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_3_ch_9.html"/>
+      </navPoint>
+      <navPoint id="navpoint-51" playOrder="51">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">10 Dors got as far as the palace high vestibule. There…</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_3_ch_10.html"/>
+      </navPoint>
+      <navPoint id="navpoint-52" playOrder="52">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">11 Hari wobbled slightly as he left the Lyceum three hours…</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_3_ch_11.html"/>
+      </navPoint>
+      <navPoint id="navpoint-53" playOrder="53">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">12 A man came carefully into the refresher chamber. He wore…</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_3_ch_12.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navpoint-54" playOrder="54">
+      <navLabel>
+        <text xmlns="http://www.daisy.org/z3986/2005/ncx/">Part 4: A Sense of Self</text>
+      </navLabel>
+      <content src="Text/FoundationsFear_p_4.html"/>
+      <navPoint id="navpoint-55" playOrder="55">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">1 Joan of Arc floated down the dim, rumbling tunnels of…</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_4_ch_1.html"/>
+      </navPoint>
+      <navPoint id="navpoint-56" playOrder="56">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">2 Voltaire snapped, “I’ve waited less long for Friedrich of Prussia…</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_4_ch_2.html"/>
+      </navPoint>
+      <navPoint id="navpoint-57" playOrder="57">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">3 Marq sat intently beneath his 3D holo, combing the trashy…</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_4_ch_3.html"/>
+      </navPoint>
+      <navPoint id="navpoint-58" playOrder="58">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">4 “What?!” Voltaire exclaimed as he snapped into the context-frame.</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_4_ch_4.html"/>
+      </navPoint>
+      <navPoint id="navpoint-59" playOrder="59">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">5 He had been neglecting his work. His lack of interactive…</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_4_ch_5.html"/>
+      </navPoint>
+      <navPoint id="navpoint-60" playOrder="60">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">6 Marq listened tensely as Mac 500’s neutral voice recounted the…</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_4_ch_6.html"/>
+      </navPoint>
+      <navPoint id="navpoint-61" playOrder="61">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">7 When the walls of her chamber began to melt and…</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_4_ch_7.html"/>
+      </navPoint>
+      <navPoint id="navpoint-62" playOrder="62">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">8 This was like a dream—but when had he ever…</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_4_ch_8.html"/>
+      </navPoint>
+      <navPoint id="navpoint-63" playOrder="63">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">9 She winked out of the sim-space, away from him confused.</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_4_ch_9.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navpoint-64" playOrder="64">
+      <navLabel>
+        <text xmlns="http://www.daisy.org/z3986/2005/ncx/">“If we stay in our apartment, don’t ever leave Streeling…</text>
+      </navLabel>
+      <content src="Text/FoundationsFear_ren_3.html"/>
+    </navPoint>
+    <navPoint id="navpoint-65" playOrder="65">
+      <navLabel>
+        <text xmlns="http://www.daisy.org/z3986/2005/ncx/">Part 5: Panucopia</text>
+      </navLabel>
+      <content src="Text/FoundationsFear_p_5.html"/>
+      <navPoint id="navpoint-66" playOrder="66">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">1 He didn’t fully relax until they were sitting on a…</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_5_ch_1.html"/>
+      </navPoint>
+      <navPoint id="navpoint-67" playOrder="67">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">2 “We’re certainly related, yes,” Expert Specialist Vaddo said. He was…</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_5_ch_2.html"/>
+      </navPoint>
+      <navPoint id="navpoint-68" playOrder="68">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">3 He spent mornings studying the pan data banks. The mathematician…</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_5_ch_3.html"/>
+      </navPoint>
+      <navPoint id="navpoint-69" playOrder="69">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">4 A good day. Plenty of fat grubs to eat in…</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_5_ch_4.html"/>
+      </navPoint>
+      <navPoint id="navpoint-70" playOrder="70">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">5 Hari shook his head to clear it. That helped a…</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_5_ch_5.html"/>
+      </navPoint>
+      <navPoint id="navpoint-71" playOrder="71">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">6 Hot day in the sun. Dust tickles. Makes me snort.</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_5_ch_6.html"/>
+      </navPoint>
+      <navPoint id="navpoint-72" playOrder="72">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">7 He stayed with it this time. After the first crisis…</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_5_ch_7.html"/>
+      </navPoint>
+      <navPoint id="navpoint-73" playOrder="73">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">8 “Pure animal love,” she said over dinner. “Refreshing.”</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_5_ch_8.html"/>
+      </navPoint>
+      <navPoint id="navpoint-74" playOrder="74">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">9 He had a glimmering of an idea about the pans…</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_5_ch_9.html"/>
+      </navPoint>
+      <navPoint id="navpoint-75" playOrder="75">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">10 “I don’t see it,” Dors said at Dinner.</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_5_ch_10.html"/>
+      </navPoint>
+      <navPoint id="navpoint-76" playOrder="76">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">11 At dinner he felt elated, exhausted, and not in the…</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_5_ch_11.html"/>
+      </navPoint>
+      <navPoint id="navpoint-77" playOrder="77">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">12 “When did you bail out?” Dors asked.</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_5_ch_12.html"/>
+      </navPoint>
+      <navPoint id="navpoint-78" playOrder="78">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">13 Vaddo invited him to try a combat-sport the station offered…</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_5_ch_13.html"/>
+      </navPoint>
+      <navPoint id="navpoint-79" playOrder="79">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">14 They spent one last day immersed in their pans, sunning…</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_5_ch_14.html"/>
+      </navPoint>
+      <navPoint id="navpoint-80" playOrder="80">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">15 The humans came swiftly, with clatters and booms.</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_5_ch_15.html"/>
+      </navPoint>
+      <navPoint id="navpoint-81" playOrder="81">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">16 They used pan modes of patrolling.</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_5_ch_16.html"/>
+      </navPoint>
+      <navPoint id="navpoint-82" playOrder="82">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">17 He had not counted on the river. Men, animals—these…</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_5_ch_17.html"/>
+      </navPoint>
+      <navPoint id="navpoint-83" playOrder="83">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">18 Walking was work and Ipan wasn’t having any.</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_5_ch_18.html"/>
+      </navPoint>
+      <navPoint id="navpoint-84" playOrder="84">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">19 Ipan needed food and rest—if only to stop his…</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_5_ch_19.html"/>
+      </navPoint>
+      <navPoint id="navpoint-85" playOrder="85">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">20 They moved on in spite of the blunt, deep unease…</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_5_ch_20.html"/>
+      </navPoint>
+      <navPoint id="navpoint-86" playOrder="86">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">21 The station crowned a rugged hill. Steep gullies gave the</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_5_ch_21.html"/>
+      </navPoint>
+      <navPoint id="navpoint-87" playOrder="87">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">22 Hari’s eyes snapped open.</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_5_ch_22.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navpoint-88" playOrder="88">
+      <navLabel>
+        <text xmlns="http://www.daisy.org/z3986/2005/ncx/">Part 6: Ancient Fogs</text>
+      </navLabel>
+      <content src="Text/FoundationsFear_p_6.html"/>
+      <navPoint id="navpoint-89" playOrder="89">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">1 Voltaire scowled, vexed.</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_6_ch_1.html"/>
+      </navPoint>
+      <navPoint id="navpoint-90" playOrder="90">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">2 They had escaped, somehow.</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_6_ch_2.html"/>
+      </navPoint>
+      <navPoint id="navpoint-91" playOrder="91">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">3 Voltaire got her calmed down just in time. He labored…</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_6_ch_3.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navpoint-92" playOrder="92">
+      <navLabel>
+        <text xmlns="http://www.daisy.org/z3986/2005/ncx/">R. Daneel Olivaw was alarmed. “I have underestimated Lamurk’s power.”</text>
+      </navLabel>
+      <content src="Text/FoundationsFear_ren_4.html"/>
+    </navPoint>
+    <navPoint id="navpoint-93" playOrder="93">
+      <navLabel>
+        <text xmlns="http://www.daisy.org/z3986/2005/ncx/">Part 7: Stars Like Grains of Sand</text>
+      </navLabel>
+      <content src="Text/FoundationsFear_p_7.html"/>
+      <navPoint id="navpoint-94" playOrder="94">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">1 The sky tumbled down. Hari Seldon reeled away from it.</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_7_ch_1.html"/>
+      </navPoint>
+      <navPoint id="navpoint-95" playOrder="95">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">2 If Buta Fyrnix had begun as a grain of sand…</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_7_ch_2.html"/>
+      </navPoint>
+      <navPoint id="navpoint-96" playOrder="96">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">3 In Hari’s studies he had discovered a curious little law.</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_7_ch_3.html"/>
+      </navPoint>
+      <navPoint id="navpoint-97" playOrder="97">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">4 In the men’s room, above the urinal he used, Hari…</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_7_ch_4.html"/>
+      </navPoint>
+      <navPoint id="navpoint-98" playOrder="98">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">5 A yellow-green sun greeted them. And soon enough, an Imperial…</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_7_ch_5.html"/>
+      </navPoint>
+      <navPoint id="navpoint-99" playOrder="99">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">6 “Vector aside for search,” came an automatic command from an…</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_7_ch_6.html"/>
+      </navPoint>
+      <navPoint id="navpoint-100" playOrder="100">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">7 It was dizzying—leaping about the entire galaxy, trapped in…</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_7_ch_7.html"/>
+      </navPoint>
+      <navPoint id="navpoint-101" playOrder="101">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">8 The Empire’s twenty-five million worlds supported an average of only…</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_7_ch_8.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navpoint-102" playOrder="102">
+      <navLabel>
+        <text xmlns="http://www.daisy.org/z3986/2005/ncx/">R. Daneel gazed at Dors without expression, letting his body…</text>
+      </navLabel>
+      <content src="Text/FoundationsFear_ren_5.html"/>
+    </navPoint>
+    <navPoint id="navpoint-103" playOrder="103">
+      <navLabel>
+        <text xmlns="http://www.daisy.org/z3986/2005/ncx/">Part 8: The Eternal Equations</text>
+      </navLabel>
+      <content src="Text/FoundationsFear_p_7.html#p_8"/>
+      <navPoint id="navpoint-104" playOrder="104">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">1 Hari Seldon stood alone in the lift, thinking.</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_8_ch_1.html"/>
+      </navPoint>
+      <navPoint id="navpoint-105" playOrder="105">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">2 “We are trapped between tin deities and carbon angels,” Voltaire…</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_8_ch_2.html"/>
+      </navPoint>
+      <navPoint id="navpoint-106" playOrder="106">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">3 “Where did you learn that?”</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_8_ch_3.html"/>
+      </navPoint>
+      <navPoint id="navpoint-107" playOrder="107">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">4 Joan of Arc found in herself both bravery and fear.</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_8_ch_4.html"/>
+      </navPoint>
+      <navPoint id="navpoint-108" playOrder="108">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">5 Cleon said, “The woman confessed readily. A professional assassin. I…</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_8_ch_5.html"/>
+      </navPoint>
+      <navPoint id="navpoint-109" playOrder="109">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">6 Voltaire shouted proudly, “I spent much of my career exiled…</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_8_ch_6.html"/>
+      </navPoint>
+      <navPoint id="navpoint-110" playOrder="110">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">7 “Ugh.” Marq curled his lip.</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_8_ch_7.html"/>
+      </navPoint>
+      <navPoint id="navpoint-111" playOrder="111">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">8 Voltaire felt chilly fear slide through him like a knife.</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_8_ch_8.html"/>
+      </navPoint>
+      <navPoint id="navpoint-112" playOrder="112">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">9 Hari took a deep breath and prepared to enter sim-space…</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_8_ch_9.html"/>
+      </navPoint>
+      <navPoint id="navpoint-113" playOrder="113">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">10 “I need to see Daneel,” Hari insisted. He felt a…</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_8_ch_10.html"/>
+      </navPoint>
+      <navPoint id="navpoint-114" playOrder="114">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">11 Hari waited in the antechamber of the High Council. He…</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_8_ch_11.html"/>
+      </navPoint>
+      <navPoint id="navpoint-115" playOrder="115">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">12 On his way, he caught a comm-squirt.</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_8_ch_12.html"/>
+      </navPoint>
+      <navPoint id="navpoint-116" playOrder="116">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">13 He hovered in an N-dimensional space, far from politics.</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_8_ch_13.html"/>
+      </navPoint>
+      <navPoint id="navpoint-117" playOrder="117">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">14 Daneel said bleakly, “My agents, my brethren…all dead.”</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_8_ch_14.html"/>
+      </navPoint>
+      <navPoint id="navpoint-118" playOrder="118">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">15 Hari sat alone and stared at the holo of a…</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_8_ch_15.html"/>
+      </navPoint>
+      <navPoint id="navpoint-119" playOrder="119">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">16 The two figures from a past beyond antiquity flew in…</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_8_ch_16.html"/>
+      </navPoint>
+      <navPoint id="navpoint-120" playOrder="120">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">17 Hari sat back at his desk. First Minister, but on…</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_8_ch_17.html"/>
+      </navPoint>
+      <navPoint id="navpoint-121" playOrder="121">
+        <navLabel>
+          <text xmlns="http://www.daisy.org/z3986/2005/ncx/">18 He and Dors watched the great luminous spiral turn beneath…</text>
+        </navLabel>
+        <content src="Text/FoundationsFear_p_8_ch_18.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navpoint-122" playOrder="122">
+      <navLabel>
+        <text xmlns="http://www.daisy.org/z3986/2005/ncx/">Afterword</text>
+      </navLabel>
+      <content src="Text/FoundationsFear_p_7.html#bm_1"/>
+    </navPoint>
+    <navPoint id="navpoint-123" playOrder="123">
+      <navLabel>
+        <text xmlns="http://www.daisy.org/z3986/2005/ncx/">About the Author</text>
+      </navLabel>
+      <content src="Text/FoundationsFear_p_7.html#bm_2"/>
+    </navPoint>
+    <navPoint id="navpoint-124" playOrder="124">
+      <navLabel>
+        <text xmlns="http://www.daisy.org/z3986/2005/ncx/">Critical Acclaim</text>
+      </navLabel>
+      <content src="Text/FoundationsFear_p_7.html#bm_3"/>
+    </navPoint>
+    <navPoint id="navpoint-125" playOrder="125">
+      <navLabel>
+        <text xmlns="http://www.daisy.org/z3986/2005/ncx/">The Second Foundation Trilogy</text>
+      </navLabel>
+      <content src="Text/FoundationsFear_p_7.html#bm_4"/>
+    </navPoint>
+    <navPoint id="navpoint-126" playOrder="126">
+      <navLabel>
+        <text xmlns="http://www.daisy.org/z3986/2005/ncx/">Credits</text>
+      </navLabel>
+      <content src="Text/FoundationsFear_p_7.html#bm_5"/>
+    </navPoint>
+    <navPoint id="navpoint-127" playOrder="127">
+      <navLabel>
+        <text xmlns="http://www.daisy.org/z3986/2005/ncx/">Copyright</text>
+      </navLabel>
+      <content src="Text/FoundationsFear_p_7.html#bm_7"/>
+    </navPoint>
+    <navPoint id="navpoint-128" playOrder="128">
+      <navLabel>
+        <text xmlns="http://www.daisy.org/z3986/2005/ncx/">About the Publisher</text>
+      </navLabel>
+      <content src="Text/FoundationsFear_p_7.html#bm_8"/>
+    </navPoint>
+  </navMap>
+</ncx>

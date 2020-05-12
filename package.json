@@ -8,7 +8,7 @@
   ],
   "scripts": {
     "build": "rimraf ./build && tsc",
-    "start": "npm run build && node build/index.js",
+    "start": "npm run build && node build/book.js",
     "docs": "rimraf ./docs && jsdoc src/book.ts -c jsdoc.json",
     "test": "ts-mocha tests/*.test.ts"
   },
@@ -22,19 +22,21 @@
   "author": "Joe Pitts",
   "license": "ISC",
   "dependencies": {
-    "@types/xmldoc": "^1.1.4",
+    "archiver": "^4.0.1",
     "node-stream-zip": "^1.9.1",
-    "xmldoc": "^1.1.2"
+    "xmldoc": "^1.1.2",
+    "rimraf": "^3.0.2"
   },
   "devDependencies": {
     "@types/chai": "^4.2.11",
     "@types/mocha": "^7.0.2",
     "@types/node": "^13.13.4",
+    "@types/archiver": "^3.1.0",
+    "@types/xmldoc": "^1.1.4",
     "better-docs": "^2.0.0",
     "chai": "^4.2.0",
     "jsdoc": "^3.6.4",
     "mocha": "^7.1.2",
-    "rimraf": "^3.0.2",
     "ts-mocha": "^7.0.0",
     "ts-node": "^8.10.1",
     "typescript": "^3.8.3"
