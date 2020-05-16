@@ -5,7 +5,9 @@ import archiver from "archiver";
 import fs from "fs";
 // @ts-ignore
 import rimraf from "rimraf";
-import { resolve } from "dns";
+// @ts-ignore
+import { DOMParser, XMLSerializer } from "xmldom";
+import { format } from "url";
 
 /**
  * A books Metadata
@@ -269,12 +271,43 @@ class Book {
     return this.getData();
   }
 
-  async save(): Promise<boolean>{
-    await new Promise((resolve) => {
-      rimraf("extracted", resolve);
-    });
+  /**
+   * Saves the book to a epub file. Defaults to TITLE: AUTHOR.epub but a string can be submitted to change this
+   * 
+   */
+  async save(name?: string): Promise<boolean> {
+
+    let save_setData = async (doc: any, key: string, value: UString): Promise<any> => {
+      let metadataNode = doc.documentElement.getElementsByTagName("metadata")[0];
+
+      let node = doc.getElementsByTagName(key)[0];
+      if (node) {
+        if (value === undefined) metadataNode.removeChild(node); 
+        else {
+          node.childNodes['0'].data = value;
+        
+          let attributes = Object.values(node.attributes).slice(0, node.attributes.length);
+          attributes.forEach((attr:any) => {
+            if(attr.prefix === "opf") node.removeAttribute(attr.name); // opf attributes are from old epub spec
+          });
+        }
+      }
+      else if(value !== undefined) {
+        let newNode = doc.createElement(key);
+        let text = doc.createTextNode(value);
+        newNode.appendChild(text);
+        doc.insertBefore(newNode, metadataNode.lastChild);
+      }
+           
+      return doc;
+    }
+
+
+
+    await new Promise((resolve) => { rimraf("extracted", resolve); });
 
     let zip: StreamZip;
+    
 
     let zipPromise = new Promise((resolve, reject) => {
       zip = new StreamZip({
@@ -285,42 +318,54 @@ class Book {
       zip.on("error", reject);
     });
 
-    await zipPromise.then(() => {
+
+    await zipPromise.then(async () => {
+
       let opfObject = Object.values(zip.entries()).filter((x: any) => {
         return pathLib.extname(x.name) === ".opf";
       })[0];
-      let document = new xmldoc.XmlDocument(
-        zip.entryDataSync(opfObject.name).toString("utf-8")
-      );
-      let t = document.childNamed("dc:title");
-      if (t) {
-        t.val = "Test";
-        console.log(t);
-      }
-    });
-    let extractPromise = new Promise((resolve, reject) => {
-      fs.mkdirSync("extracted");
-      // @ts-ignore
-      zip.extract(null, "./extracted", (err, count) => {
-        console.log(err ? "Extract error" : `Extracted ${count} entries`);
-        zip.close();
-        if(err) {reject()}
-        else{resolve();}
+      let contentOpfPath = pathLib.join(pathLib.dirname(opfObject.name), opfObject.name);
+
+      let doc = new DOMParser().parseFromString(zip.entryDataSync(opfObject.name).toString("utf-8"));
+      let extractPromise = new Promise((resolve, reject) => {
+        fs.mkdirSync("extracted");
+        // @ts-ignore
+        zip.extract(null, "./extracted", (err, count) => {
+          console.log(err ? "Extract error" : `Extracted ${count} entries`);
+          zip.close();
+          if (err) { reject() }
+          else { resolve(); }
+        });
       });
+      await extractPromise;
+
+    
+      doc = await save_setData(doc, "dc:title", this.title);
+      doc = await save_setData(doc, "dc:identifier", this.identifier);
+      doc = await save_setData(doc, "dc:language", this.language);
+      doc = await save_setData(doc, "dc:creator", this.creator);
+      doc = await save_setData(doc, "dc:contributor", this.contributor);
+      doc = await save_setData(doc, "dc:coverage", this.coverage);
+      doc = await save_setData(doc, "dc:date", this.date);
+      doc = await save_setData(doc, "dc:description", this.description);
+      doc = await save_setData(doc, "dc:format", this.format);
+      doc = await save_setData(doc, "dc:publisher", this.publisher);
+      doc = await save_setData(doc, "dc:relation", this.relation);
+      doc = await save_setData(doc, "dc:rights", this.rights);
+      doc = await save_setData(doc, "dc:source", this.source);
+      doc = await save_setData(doc, "dc:subject", this.subject);
+      doc = await save_setData(doc, "dc:type", this.type);
+
+      var xmlString = new XMLSerializer().serializeToString(doc);
+      fs.writeFileSync(`./extracted/${contentOpfPath}`,xmlString,{encoding:'utf8',flag:'w'})
+      let filename = `${this.title}: ${this.creator}.epub`
+      if(name) {filename = name;}
+      await zipDirectory("./extracted", filename);
+      await new Promise((resolve) => { rimraf("extracted", resolve); });
+
     });
-    await extractPromise;
-    return true; 
+
+    return true;
   }
 }
-
-async function main() {
-  let book = new Book(
-    "/home/joe/Downloads/Issac Asimov Foundation Series Complete [EDGE]/Gregory Benford - Foundation's Fear.epub"
-  );
-  await book.read();
-  await book.save();
-  console.log("Saved!");
-}
-
-main();
-// export = Book;
+export = Book;

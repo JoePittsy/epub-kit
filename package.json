@@ -22,17 +22,18 @@
   "author": "Joe Pitts",
   "license": "ISC",
   "dependencies": {
+    "@types/xmldom": "^0.1.29",
     "archiver": "^4.0.1",
     "node-stream-zip": "^1.9.1",
+    "rimraf": "^3.0.2",
     "xmldoc": "^1.1.2",
-    "rimraf": "^3.0.2"
+    "xmldom": "^0.3.0"
   },
   "devDependencies": {
     "@types/chai": "^4.2.11",
     "@types/mocha": "^7.0.2",
     "@types/node": "^13.13.4",
     "@types/archiver": "^3.1.0",
-    "@types/xmldoc": "^1.1.4",
     "better-docs": "^2.0.0",
     "chai": "^4.2.0",
     "jsdoc": "^3.6.4",
