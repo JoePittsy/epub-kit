@@ -1,6 +1,6 @@
 {
   "name": "epub-kit",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "A suite of tools for working with epubs",
   "main": "build/book.js",
   "files": [
